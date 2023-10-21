@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.14",
+    "@types/react-window": "^1.8.7",
     "compose-function": "^3.0.3",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
@@ -17,6 +21,8 @@
     "react-dom": "^18.2.0",
     "react-router": "^6.17.0",
     "react-router-dom": "^6.17.0",
+    "react-virtualized-auto-sizer": "^1.0.20",
+    "react-window": "^1.8.9",
     "sort-by": "^1.2.0"
   },
   "devDependencies": {

@@ -1,19 +1,19 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Main, NotFound, Post } from '../../pages';
+import { MainPage, NotFoundPage, PostPage } from '../../pages';
 import { RouteDescriptions, RouteName } from '../../shared/config';
 
 const routes: RouteDescriptions = [
   {
     path: RouteName.Main,
-    component: <Main/>,
+    component: <MainPage/>,
   },
   {
     path: RouteName.Post,
-    component: <Post/>,
+    component: <PostPage/>,
   },
   {
     path: RouteName.NotFound,
-    component: <NotFound/>,
+    component: <NotFoundPage/>,
   },
 ];
 export const AppRouter = () => (
