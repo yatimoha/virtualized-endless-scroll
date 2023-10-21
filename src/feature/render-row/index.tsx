@@ -1,12 +1,19 @@
 import ListItem from '@mui/material/ListItem';
 import { ListChildComponentProps } from 'react-window';
 import { Post } from '../../entities';
-export const RenderRow = (props: ListChildComponentProps) => {
-  const { index, style } = props;
+import { PostsData } from '../get-posts';
 
-  return (
+type RenderRowProps = {
+  posts: PostsData;
+  listChildComponent: ListChildComponentProps;
+}
+export const RenderRow = ({posts, listChildComponent}: RenderRowProps) => {
+  const { index, style } = listChildComponent;
+
+  return posts.map((post) => (
     <ListItem style={style} key={index} component="div" disablePadding>
-      <Post index={index}/>
+      <Post post={post}/>
     </ListItem>
-  );
+    )
+  )
 }
